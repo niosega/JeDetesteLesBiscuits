@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "JeDetesteLesBiscuits",
+    "description": "Remove cookies banner.",
+    "browser_action":
+    {
+        "default_popup": "base.html"
+    },
+    "permissions": [
+        "tabs",
+        "cookies",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["base.js"],
+        "run_at": "document_end"
+        }
+    ]
+}
