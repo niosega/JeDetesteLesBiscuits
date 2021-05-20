@@ -42,6 +42,8 @@ function process() {
       waitAndRemoveById("#onetrust-consent-sdk");
     } else if (hostname.includes("marmiton.org")) {
       waitAndRemoveById("#didomi-host");
+    } else if (hostname.includes("quarkslab.com")) {
+      waitAndRemoveById("#axeptio_overlay");
     }
 }
 
