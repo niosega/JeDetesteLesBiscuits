@@ -35,6 +35,8 @@ function process() {
       waitAndRemoveById("#didomi-host");
     } else if (hostname.includes("quarkslab.com")) {
       waitAndRemoveById("#axeptio_overlay");
+    } else if (hostname.includes("altaprofits.com")) {
+      waitAndRemoveById("#notification");
     }
 }
 
